@@ -8,3 +8,5 @@ module.exports = withImages({
     return config
   }
 })
+
+module.exports.basePath='/aline-blog'
