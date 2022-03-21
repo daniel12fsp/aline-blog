@@ -4,9 +4,11 @@ module.exports = withImages({
   images: {
     disableStaticImages: true
 },
+assetPrefix:'/aline-blog',
+basePath:'/aline-blog',
+
   webpack(config, options) {
     return config
   }
 })
 
-module.exports.basePath='/aline-blog'
