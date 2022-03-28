@@ -37,11 +37,15 @@ const ContainerText = styled.div`
   flex-direction: column;
   justify-content: center;
   padding: 0 10px;
+  ${BigScreen`
+  display: flex;
+  align-items: center;
+`}
 `;
 
 const CustomText = styled(Text)`
   ${BigScreen`
-    max-width: 400px;
+    max-width: 80%;
   `}
 `;
 
@@ -59,12 +63,7 @@ export function Main() {
 
         <ContainerText>
           <CustomText>
-            Olá, me chamo Aline Fernandes , sou formada em Psicologia e
-            Hipnoterapia Ericksoniana. Também facilito sessões de ROAR
-            (Radicalmente Viva Além do Abuso), Limpeza Energétca, Barras de
-            Access, Facelift e Processos Corporais de Access Consciousness
-            Atendo crianças, jovens e adultos, presencialmente em Manaus e
-            online para qualquer lugar.
+          Olá, me chamo Aline Fernandes, sou formada em Psicologia e Hipnoterapia Ericksoniana. Também facilito sessões de ROAR (Radicalmente Viva Além do Abuso), Limpeza Energética, Barras de Access, Facelift e Processos Corporais de Access Consciousness. Atendo crianças, jovens e adultos, presencialmente em Manaus e online para qualquer lugar. Acredito que terapia pode ser algo dinâmico, divertido e que funciona. Ajudo você a desenvolver a autoestima e conquistar o que deseja com facilidade. 
           </CustomText>
 
           <GenerateButton href={whatspappLink} target="_blank">
