@@ -1,32 +1,31 @@
 import { GenerateButton } from "../Button";
-import { Display } from "../Display";
 import styled from "styled-components";
-import { BigScreen, whatspappLink } from "../../constants";
+import { whatspappLink } from "../../constants";
 import WhatCanBePossibleSrc from "@/imgs/whatCanBePossible.jpg";
-import LogoSrc from "@/imgs/logo.png";
 
 const ContainerText = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
+
 `;
 
-const Logo = styled.img`
-  width: 40px;
-  height: 40px;
+const Quote = styled.blockquote`
+font-size: 20px;
+margin-bottom: 10px;
+color: rgb(102, 0, 0);
 
-  ${BigScreen`
-  width: 100px;
-  height: 100px;
-  `}
-`;
+`
+const Author = styled.span` 
+font-size: 12px;
+`
 
 export function WhatCanBePossible() {
   return (
     <>
       <ContainerText>
-        <Logo src={LogoSrc} alt="logo" />
-        <Display>O que mais é possível que você se quer considerou?</Display>
+        <Quote>Só aquilo que somos realmente tem o poder de nos curar. <Author> Carl Gustav Jung.</Author></Quote>
+
       </ContainerText>
       <img
         src={WhatCanBePossibleSrc}

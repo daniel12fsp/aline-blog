@@ -1,12 +1,14 @@
 import styled from "styled-components";
 import LogoSrc from "@/imgs/logo.png";
+import { CustomDisplay } from "./Info";
 
 const ContainerFoot = styled.div`
   text-align: center;
 `;
 
 const Link = styled.a`
-  display: inline;
+  display: block;
+  margin: 10px;
 `;
 
 const Logo = styled.img`
@@ -17,40 +19,28 @@ export function Footer() {
   return (
     <ContainerFoot>
       <Logo src={LogoSrc} alt="logo" />
-
-      <h2>Nos siga nas redes sociais</h2>
-      <div>
-        @nosdominiosdoinconsciente{" "}
+      <CustomDisplay>Siga-nos nas redes sociais</CustomDisplay>
+        <div>
+        </div>
         <Link
-          href="https://www.facebook.com/nosdominiosdoinconsciente"
+          href="https://www.instagram.com/estoualinefernandes"
           target="_blank"
         >
-          face
+        Instagram
         </Link>{" "}
-        e{" "}
         <Link
-          href="https://www.instagram.com/nosdominiosdoinconsciente/"
+          href="https://www.youtube.com/channel/UCWtnKhSdtS387DcIJytXFLQ"
           target="_blank"
         >
-          insta
-        </Link>
-      </div>
-      <div>
-        @estoualinefernandes{" "}
-        <Link
-          href="https://www.facebook.com/estoualinefernandes"
-          target="_blank"
-        >
-          face
+          Youtube
         </Link>{" "}
-        e{" "}
+        {" "}
         <Link
-          href="https://www.instagram.com/estoualinefernandes/"
+          href="https://www.facebook.com/estoualinefernandes/"
           target="_blank"
         >
-          insta
+          Facebook
         </Link>
-      </div>
     </ContainerFoot>
   );
 }

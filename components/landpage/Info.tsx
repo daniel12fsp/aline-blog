@@ -17,7 +17,7 @@ const MapImg = styled.img`
   ${BigScreen`max-width: 400px;`}
 `;
 
-const CustomDisplay = styled(Display)`
+export const CustomDisplay = styled(Display)`
   margin: 20px 0;
 `;
 
@@ -70,7 +70,7 @@ function Schedule() {
       <CustomDisplay>Horários de Funcionamento</CustomDisplay>
       <Text>
         <CenterList>
-          <li>Seg: Fechado</li>
+          <li>Seg: 14 - 20h</li>
           <li>Ter: 08 - 20h</li>
           <li>Qua: 08 - 20h</li>
           <li>Qui: 08 - 20h</li>

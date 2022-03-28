@@ -28,7 +28,7 @@ export default class MyDocument extends Document {
           </title>
           <meta
             name="keywords"
-            content="Aline Fernandes ,Psicologa, Hipnoterapia Ericksoniana, Hiponose, ROAR, Radicalmente Viva Além do Abuso, Limpeza Energétca, Barras de Access, Facelift, Processos Corporais de Access Consciousness "
+            content="Psicologia, Hipnose, Psicoterapeuta, Autoestima, Análise de Sonhos, Jung"
           />
           <meta
             name="description"
@@ -41,7 +41,7 @@ export default class MyDocument extends Document {
           />
           <meta
             property="og:description"
-            content="Atendimento psicológico em Manaus"
+            content="Atendimento psicológico em Manaus e online"
           />
 
           {/* TODO gerar uma imagem da aline com nome dela */}

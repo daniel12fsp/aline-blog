@@ -147,7 +147,7 @@ export function Navbar() {
         </SmallContainer>
 
         <BigScreenLinks>
-          <Link href="#about-us">Sobre nós</Link>
+          <Link href="#about-us">Sobre</Link>
           <Link href="#contact">Contato</Link>
           <Link href="#schedule">Horário</Link>
           <Link href="#address">Endereço</Link>
@@ -157,7 +157,7 @@ export function Navbar() {
       </MainContainer>
       {click && (
         <Menu>
-          <Link href="#about-us">Sobre nós</Link>
+          <Link href="#about-us">Sobre</Link>
           <Link href="#schedule">Horário</Link>
           <Link href="#address">Endereço</Link>
         </Menu>
