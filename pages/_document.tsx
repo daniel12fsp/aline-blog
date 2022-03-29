@@ -67,7 +67,14 @@ export default class MyDocument extends Document {
         <body>
           <Main></Main>
           <NextScript />
-        </body>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YMH1BFZZL7"></script>
+        <script dangerouslySetInnerHTML={ {__html:`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-YMH1BFZZL7');
+          `.replace(/\s/g, "").trim()}}/>
+          </body>
       </Html>
     );
   }
