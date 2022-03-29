@@ -73,7 +73,7 @@ export default class MyDocument extends Document {
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'G-YMH1BFZZL7');
-          `.replace(/\s/g, "").trim()}}/>
+          `.replace(/\s/g, " ").trim()}}/>
           </body>
       </Html>
     );

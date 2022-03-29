@@ -105,7 +105,7 @@ export function Info() {
       <SubContainer>
         <Contact />
         <Schedule />
-      </SubContainer>
+      </SubContainer> 
     </Container>
   );
 }

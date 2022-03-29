@@ -87,7 +87,7 @@ const Link = styled.a`
   text-decoration: unset;
   border-bottom: 1px dashed ${defaultColorNavbar};
   color: ${defaultColorNavbar};
-  ${BigScreen`margin-right: 5px;`}
+  ${BigScreen`margin: 20px;`}
 `;
 
 const Brand = styled.a`
@@ -112,7 +112,7 @@ const Menu = styled.div`
   width: 100%;
 `;
 
-const BigScreenLinks = styled.a`
+const BigScreenLinks = styled.div`
   display: none;
   ${BigScreen`display: block;`}
 `;
@@ -127,7 +127,7 @@ const SmallContainer = styled.div`
 
 const SmallContactLinks = styled(Link)`
   font-size: 15px;
-  margin-top: 10px;
+
   ${MiddleScreen`
   margin-top: 0;
   margin-right: 15px;
@@ -135,6 +135,18 @@ const SmallContactLinks = styled(Link)`
   `}
   ${BigScreen` display: none;`}
 `;
+
+
+const AddressContactLink = styled(Link)`
+  display: none;
+
+  ${MiddleScreen`
+  display:block;
+
+  `}
+  ${BigScreen` display: none;`}
+`;
+
 
 export function Navbar() {
   const [click, setClick] = useState(false);
@@ -145,7 +157,7 @@ export function Navbar() {
         <Brand href="/">Aline Fernandes</Brand>
         <SmallContainer>
           <SmallContactLinks href={whatspappLink}>Whatsapp</SmallContactLinks>
-          <SmallContactLinks href="#address">Endereço</SmallContactLinks>
+          <AddressContactLink href="#address">Endereço</AddressContactLink>
         </SmallContainer>
 
         <BigScreenLinks>
@@ -158,10 +170,10 @@ export function Navbar() {
         <MenuIcon click={click} onClick={setClick} />
       </MainContainer>
       {click && (
-        <Menu>
-          <Link href="#about-us">Sobre</Link>
-          <Link href="#schedule">Horário</Link>
-          <Link href="#address">Endereço</Link>
+        <Menu >
+          <Link href="#about-us" onClick={() =>setClick(false)} >Sobre</Link>
+          <Link href="#schedule" onClick={() =>setClick(false)} >Horário</Link>
+          <Link href="#address"onClick={() =>setClick(false)} >Endereço</Link>
         </Menu>
       )}
     </Nav>

@@ -8,7 +8,7 @@ const ContainerFoot = styled.div`
 
 const Link = styled.a`
   display: block;
-  margin: 10px;
+  margin: 20px;
 `;
 
 const Logo = styled.img`

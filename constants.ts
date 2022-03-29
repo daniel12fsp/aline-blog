@@ -7,7 +7,7 @@ export function BigScreen(css: TemplateStringsArray) :string{
 export function MiddleScreen(css: TemplateStringsArray) :string{
   return `@media (min-width: 400px) {${css}}`;
 }
-export const domain="https://alinefernandes.com.br/"
+export const domain="https://alinefernandes.com.br"
 
 
 const ldJsonDataRaw = {
