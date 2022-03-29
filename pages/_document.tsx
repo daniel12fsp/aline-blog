@@ -1,13 +1,12 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { domain, ldJsonData } from "../constants";
-// import fs from "fs";
 
 export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="pt-BR">
         <Head>
-          {/* <meta
+          <meta
             name="commit-hash"
             content={require("child_process")
               .execSync("git rev-parse HEAD")
@@ -20,8 +19,7 @@ export default class MyDocument extends Document {
               .execSync("git show -s --format=%s")
               .toString()
               .trim()}
-          /> */}
-
+          />
           <title>
             Aline Fernandes | Psicoterapeuta e Facilitadora | Atendimento
             Presencial e Online
