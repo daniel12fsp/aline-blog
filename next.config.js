@@ -9,8 +9,8 @@ module.exports = withImages({
   images: {
     disableStaticImages: true
 },
-assetPrefix:path,
-basePath:path,
+// assetPrefix:path,
+// basePath:path,
 
   webpack(config, options) {
     return config
