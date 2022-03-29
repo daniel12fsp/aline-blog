@@ -44,7 +44,6 @@ export default class MyDocument extends Document {
             content="Atendimento psicológico em Manaus e online"
           />
 
-          {/* TODO gerar uma imagem da aline com nome dela */}
           <meta property="og:image" content={require("@/imgs/aline.png")} />
           <meta property="og:image:width" content="1280" />
           <meta property="og:image:height" content="960" />
@@ -56,10 +55,6 @@ export default class MyDocument extends Document {
             dangerouslySetInnerHTML={{ __html: ldJsonData }}
           />
 
-          <meta
-            name="google-site-verification"
-            content="V727dzuZu2kulElbNyybRq_NCpSMRkcQAtRNQaWhcQ8"
-          />
           <meta name="twitter:card" content="summary_large_image" />
           <meta
             name="twitter:title"

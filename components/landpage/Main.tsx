@@ -44,6 +44,7 @@ const ContainerText = styled.div`
 `;
 
 const CustomText = styled(Text)`
+  line-height: 30px;
   ${BigScreen`
     max-width: 80%;
   `}

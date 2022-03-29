@@ -80,7 +80,7 @@ const MainContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-  background-color: rgb(102 0 0 / 60%);
+  background-color: rgb(163 102 102);
 `;
 
 const Link = styled.a`
@@ -101,13 +101,15 @@ const Menu = styled.div`
   display: flex;
   flex-flow: column;
   align-items: center;
-  background-color: rgb(102 0 0 / 37%);
+  background-color: rgb(163 102 102);
   height: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   ${BigScreen` display: none;`}
+  position: absolute;
+  width: 100%;
 `;
 
 const BigScreenLinks = styled.a`
