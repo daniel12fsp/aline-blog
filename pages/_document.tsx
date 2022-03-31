@@ -20,6 +20,7 @@ export default class MyDocument extends Document {
               .toString()
               .trim()}
           />
+            <meta name="theme-color" content="#a36666"/>
           <title>
             Aline Fernandes | Psicoterapeuta e Facilitadora | Atendimento
             Presencial e Online
@@ -63,6 +64,7 @@ export default class MyDocument extends Document {
             content="Aline Fernandes | Psicoterapeuta e Facilitadora | Manaus | Atendimento Presencial e Online"
           />
           <meta name="twitter:image" content={require("@/imgs/aline.png")} />
+          <meta name="google-site-verification" content="wL0jmcnQhkO5CP0PoEtH0qBmpIczU-echlYvuaOdLqw" />
         </Head>
         <body>
           <Main></Main>
