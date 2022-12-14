@@ -2,8 +2,13 @@ import styled from "styled-components";
 import { GenerateButton } from "../Button";
 import { Display } from "../Display";
 import { Text } from "../Text";
-import { BigScreen, whatspappLink } from "../../constants";
-import MapSrc from "@/imgs/mapa.png";
+import {
+  BigScreen,
+  googleMapLink,
+  ldJsonDataRaw,
+  whatspappLink,
+} from "../../constants";
+import MapSrc from "@/imgs/mapa.jpeg";
 
 const ContainerAddress = styled.div``;
 
@@ -30,14 +35,11 @@ function Address() {
   return (
     <ContainerAddress id="address">
       <CustomDisplay>Endereço</CustomDisplay>
-      <LinkMap href="https://goo.gl/maps/cFRDTER2GV7FViJYA" target="_blank">
+      <LinkMap href={googleMapLink} target="_blank">
         <MapImg src={MapSrc} alt="Mapa" />
       </LinkMap>
-      <SimpleText>Rua Constelação de Touro, n 322 A, sala 5, Aleixo</SimpleText>
-      <GenerateButton
-        href="https://goo.gl/maps/cFRDTER2GV7FViJYA"
-        target="_blank"
-      >
+      <SimpleText>{ldJsonDataRaw.address.streetAddress}</SimpleText>
+      <GenerateButton href={googleMapLink} target="_blank">
         Ver no goolge maps
       </GenerateButton>
     </ContainerAddress>
@@ -105,7 +107,7 @@ export function Info() {
       <SubContainer>
         <Contact />
         <Schedule />
-      </SubContainer> 
+      </SubContainer>
     </Container>
   );
 }

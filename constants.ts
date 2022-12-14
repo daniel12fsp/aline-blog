@@ -1,47 +1,48 @@
-
-
-export function BigScreen(css: TemplateStringsArray) :string{
-    return `@media (min-width: 650px) {${css}}`;
+export function BigScreen(css: TemplateStringsArray): string {
+  return `@media (min-width: 650px) {${css}}`;
 }
 
-export function MiddleScreen(css: TemplateStringsArray) :string{
+export function MiddleScreen(css: TemplateStringsArray): string {
   return `@media (min-width: 400px) {${css}}`;
 }
-export const domain="https://alinefernandes.com.br"
+export const domain = "https://alinefernandes.com.br";
 
-
-const ldJsonDataRaw = {
+export const ldJsonDataRaw = {
   "@context": [
-      "http://schema.org",
-      {
-          "language": "pt-br"
-      }
+    "http://schema.org",
+    {
+      language: "pt-br",
+    },
   ],
   "@type": "MedicalBusiness",
-  "name": "Aline Fernandes | Psicoterapeuta e Facilitadora",
-  "url": domain,
-  "image": require("@/imgs/aline.png"),
-  "description": "Aline Fernandes | Psicoterapeuta e Facilitadora | Manaus | Atendimento Presencial e Online",
-  "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "BR",
-      "addressLocality": "Alexo",
-      "addressRegion": "AM",
-      "postalCode": "69060-110",
-      "streetAddress": "322 R. Constelação de Touro"
+  name: "Aline Fernandes | Psicoterapeuta e Facilitadora",
+  url: domain,
+  image: require("@/imgs/aline.png"),
+  description:
+    "Aline Fernandes | Psicoterapeuta e Facilitadora | Manaus | Atendimento Presencial e Online",
+  address: {
+    "@type": "PostalAddress",
+    addressCountry: "BR",
+    addressLocality: "Parque dez de novembro",
+    addressRegion: "AM",
+    postalCode: "69055480",
+    streetAddress:
+      "Rua Cláudio Coutinho (antiga rua 30), casa 1246 - Parque dez de novembro",
   },
-  "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": -3.1010213483733193,
-      "longitude": -60.00399223164815
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: -3.0786001406387444,
+    longitude: -60.009211291106745,
   },
-  "telephone": "92988113591",
-  "logo": require("@/imgs/aline.png")
-    }
-  export const ldJsonData = JSON.stringify(ldJsonDataRaw)
+  telephone: "92988113591",
+  logo: require("@/imgs/aline.png"),
+};
 
-export const whatspappLink = "https://wa.me/5592988113591/?text=Oi, quero agendar uma sessão?"
+export const ldJsonData = JSON.stringify(ldJsonDataRaw);
 
-export const defaultColorNavbar = 'rgb(0 0 0)';
+export const whatspappLink =
+  "https://wa.me/5592988113591/?text=Oi, quero agendar uma sessão?";
 
+export const defaultColorNavbar = "rgb(0 0 0)";
 
+export const googleMapLink = "https://goo.gl/maps/4vP9TtheKnd5Yaj89";
