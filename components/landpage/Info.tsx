@@ -6,6 +6,7 @@ import {
   BigScreen,
   googleMapLink,
   ldJsonDataRaw,
+  telephoneInfo,
   whatspappLink,
 } from "../../constants";
 import MapSrc from "@/imgs/mapa.jpeg";
@@ -55,9 +56,9 @@ function Contact() {
     <div id="contact">
       <CustomDisplay>Entre em contato</CustomDisplay>
       <GenerateButton href={whatspappLink}>
-        Mande um whatsapp (92)98811-3591
+        Mande um whatsapp {telephoneInfo.ddParantesisNumberMinusFormat()}
       </GenerateButton>
-      <Button href="tel:988113591">Ligue para (92)98811-3591</Button>
+      <Button href={`tel:${telephoneInfo.ddNumberFormat()}`}>Ligue para {telephoneInfo.ddParantesisNumberMinusFormat()}</Button>
     </div>
   );
 }

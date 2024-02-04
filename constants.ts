@@ -7,6 +7,21 @@ export function MiddleScreen(css: TemplateStringsArray): string {
 }
 export const domain = "https://alinefernandes.com.br";
 
+export const telephoneInfo = {
+  number: "984068271",
+  dd: "92",
+  countryCode: "55",
+  ddNumberFormat: function() {
+    return this.dd+this.number;
+  },
+  ddParantesisNumberMinusFormat: function() {
+    return `(${this.dd})${this.number.slice(0,5)}-${this.number.slice(5)}`;
+  },
+  countryCodeDdNumberFormat: function() {
+    return `${this.countryCode}${this.dd}${this.number}`;
+  }
+} 
+
 export const ldJsonDataRaw = {
   "@context": [
     "http://schema.org",
@@ -34,14 +49,14 @@ export const ldJsonDataRaw = {
     latitude: -3.0786001406387444,
     longitude: -60.009211291106745,
   },
-  telephone: "92988113591",
+  telephone: telephoneInfo.ddNumberFormat(),
   logo: require("@/imgs/aline.png"),
 };
 
 export const ldJsonData = JSON.stringify(ldJsonDataRaw);
 
 export const whatspappLink =
-  "https://wa.me/5592988113591/?text=Oi, quero agendar uma sessão?";
+  `https://wa.me/${telephoneInfo.countryCodeDdNumberFormat()}/?text=Oi, quero agendar uma sessão?`;
 
 export const defaultColorNavbar = "rgb(0 0 0)";
 

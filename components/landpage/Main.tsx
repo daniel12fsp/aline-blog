@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { GenerateButton } from "../Button";
 import { Display } from "../Display";
 import { Text } from "../Text";
-import { BigScreen, whatspappLink } from "../../constants";
+import { BigScreen, telephoneInfo, whatspappLink } from "../../constants";
 import FotoAlineSrc from "@/imgs/aline.png";
 
 const FotoAline = styled.img`
@@ -68,7 +68,7 @@ export function Main() {
           </CustomText>
 
           <GenerateButton href={whatspappLink} target="_blank">
-            Agende sua sessão pelo (92)98811-3591
+            Agende sua sessão pelo {telephoneInfo.ddParantesisNumberMinusFormat()}
           </GenerateButton>
         </ContainerText>
       </Container>
